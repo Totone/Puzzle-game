@@ -1,0 +1,133 @@
+body
+{
+	background-color: rgb(200,200,200);
+}
+#mainwrapper
+{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1280px;
+	background-color: rgba(184, 255, 137,0.25);
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#puzzleField 
+{
+	min-width: 800px;
+	max-width: 800px;
+	min-height: 600px;
+	max-height: 600px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#puzzleGrid
+{
+	border-collapse: collapse;
+	empty-cells: show;
+}
+
+td
+{
+	border: 1px solid green;
+	display:inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#puzzleControls
+{
+	width: 400px;
+	height: 400px;
+	margin-top: 10px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#puzzleBag
+{
+	width: 400px;
+	height: 600px;
+	background-color: rgba(184, 255, 137,0.5);
+	position: relative;
+	border-right: 1px dashed grey;
+}
+
+.cell
+{
+	background-color: rgba(255,0,0,0.1);
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	position: relative;
+}
+.cell:hover
+{
+	cursor:grab;
+}
+
+.piece
+{
+	background-image: url('puzzlePic.png');
+
+    position: absolute;
+
+    text-align: center;
+    font-size: 40px;
+
+    visibility: visible;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.piece:hover
+{
+	cursor:grabbing;
+}
+
+#statusButtons
+{
+text-align: center;
+}
+
+#bStatus
+{
+	width:100%;
+	padding: 2px;
+	text-transform: uppercase;
+	font-weight: bolder;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    outline: none;
+	border-color: rgba(0, 255, 0, 01);
+	box-shadow: 0 0 8px rgba(152, 255, 84, 0.75);
+}
+
+#bStatus:hover
+{
+	box-shadow: 0 0 15px rgb(0, 255, 0);
+}
+footer
+{
+	width: 100%;
+	background-color: rgb(25,25,25);
+	color:white;
+	text-align: center;
+	padding-bottom: 5px;
+
+	position: absolute;
+	bottom: 0px;
+}
