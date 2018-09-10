@@ -100,7 +100,7 @@ td
 
 #statusButtons
 {
-text-align: center;
+	text-align: center;
 }
 
 #bStatus
@@ -120,6 +120,7 @@ text-align: center;
 {
 	box-shadow: 0 0 15px rgb(0, 255, 0);
 }
+
 footer
 {
 	width: 100%;
